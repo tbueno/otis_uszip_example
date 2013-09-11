@@ -1,0 +1,335 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.webservicex.net/uszip.asmx?WSDL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '16826'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 17 Aug 2013 20:25:58 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<wsdl:definitions xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"
+        xmlns:tm=\"http://microsoft.com/wsdl/mime/textMatching/\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"
+        xmlns:mime=\"http://schemas.xmlsoap.org/wsdl/mime/\" xmlns:tns=\"http://www.webserviceX.NET\"
+        xmlns:s=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\"
+        xmlns:http=\"http://schemas.xmlsoap.org/wsdl/http/\" targetNamespace=\"http://www.webserviceX.NET\"
+        xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">\r\n  <wsdl:types>\r\n    <s:schema
+        elementFormDefault=\"qualified\" targetNamespace=\"http://www.webserviceX.NET\">\r\n
+        \     <s:element name=\"GetInfoByZIP\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USZip\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetInfoByZIPResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetInfoByZIPResult\">\r\n              <s:complexType mixed=\"true\">\r\n
+        \               <s:sequence>\r\n                  <s:any />\r\n                </s:sequence>\r\n
+        \             </s:complexType>\r\n            </s:element>\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetInfoByCity\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"USCity\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetInfoByCityResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetInfoByCityResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetInfoByState\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USState\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetInfoByStateResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetInfoByStateResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetInfoByAreaCode\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USAreaCode\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetInfoByAreaCodeResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetInfoByAreaCodeResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n    </s:schema>\r\n  </wsdl:types>\r\n  <wsdl:message
+        name=\"GetInfoByZIPSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetInfoByZIP\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByZIPSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetInfoByZIPResponse\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByCitySoapIn\">\r\n    <wsdl:part
+        name=\"parameters\" element=\"tns:GetInfoByCity\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByCitySoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetInfoByCityResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetInfoByStateSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetInfoByState\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByStateSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetInfoByStateResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByAreaCodeSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetInfoByAreaCode\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByAreaCodeSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetInfoByAreaCodeResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByZIPHttpGetIn\">\r\n
+        \   <wsdl:part name=\"USZip\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByZIPHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByCityHttpGetIn\">\r\n
+        \   <wsdl:part name=\"USCity\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByCityHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByStateHttpGetIn\">\r\n
+        \   <wsdl:part name=\"USState\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByStateHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByAreaCodeHttpGetIn\">\r\n
+        \   <wsdl:part name=\"USAreaCode\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByAreaCodeHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByZIPHttpPostIn\">\r\n
+        \   <wsdl:part name=\"USZip\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByZIPHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByCityHttpPostIn\">\r\n
+        \   <wsdl:part name=\"USCity\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByCityHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByStateHttpPostIn\">\r\n
+        \   <wsdl:part name=\"USState\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByStateHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetInfoByAreaCodeHttpPostIn\">\r\n
+        \   <wsdl:part name=\"USAreaCode\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetInfoByAreaCodeHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:portType name=\"USZipSoap\">\r\n    <wsdl:operation
+        name=\"GetInfoByZIP\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by Zip Code</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByZIPSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByZIPSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByCity\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by City</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByCitySoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByCitySoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByState\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by state</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByStateSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByStateSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by Area Code</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByAreaCodeSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByAreaCodeSoapOut\" />\r\n    </wsdl:operation>\r\n  </wsdl:portType>\r\n
+        \ <wsdl:portType name=\"USZipHttpGet\">\r\n    <wsdl:operation name=\"GetInfoByZIP\">\r\n
+        \     <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by Zip Code</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByZIPHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByZIPHttpGetOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByCity\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by City</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByCityHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByCityHttpGetOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByState\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by state</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByStateHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByStateHttpGetOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by Area Code</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByAreaCodeHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByAreaCodeHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \ </wsdl:portType>\r\n  <wsdl:portType name=\"USZipHttpPost\">\r\n    <wsdl:operation
+        name=\"GetInfoByZIP\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by Zip Code</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByZIPHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByZIPHttpPostOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByCity\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by City</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByCityHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByCityHttpPostOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByState\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get
+        State Code,City,Area Code,Time Zone,Zip Code by state</wsdl:documentation>\r\n
+        \     <wsdl:input message=\"tns:GetInfoByStateHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetInfoByStateHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetInfoByAreaCode\">\r\n      <wsdl:documentation
+        xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Get State Code,City,Area Code,Time
+        Zone,Zip Code by Area Code</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetInfoByAreaCodeHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetInfoByAreaCodeHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n  </wsdl:portType>\r\n  <wsdl:binding name=\"USZipSoap\"
+        type=\"tns:USZipSoap\">\r\n    <soap:binding transport=\"http://schemas.xmlsoap.org/soap/http\"
+        />\r\n    <wsdl:operation name=\"GetInfoByZIP\">\r\n      <soap:operation
+        soapAction=\"http://www.webserviceX.NET/GetInfoByZIP\" style=\"document\"
+        />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetInfoByCity\">\r\n      <soap:operation
+        soapAction=\"http://www.webserviceX.NET/GetInfoByCity\" style=\"document\"
+        />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetInfoByState\">\r\n
+        \     <soap:operation soapAction=\"http://www.webserviceX.NET/GetInfoByState\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <soap:operation soapAction=\"http://www.webserviceX.NET/GetInfoByAreaCode\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"USZipSoap12\" type=\"tns:USZipSoap\">\r\n    <soap12:binding
+        transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+        name=\"GetInfoByZIP\">\r\n      <soap12:operation soapAction=\"http://www.webserviceX.NET/GetInfoByZIP\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByCity\">\r\n      <soap12:operation soapAction=\"http://www.webserviceX.NET/GetInfoByCity\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByState\">\r\n      <soap12:operation soapAction=\"http://www.webserviceX.NET/GetInfoByState\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <soap12:operation soapAction=\"http://www.webserviceX.NET/GetInfoByAreaCode\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"USZipHttpGet\" type=\"tns:USZipHttpGet\">\r\n    <http:binding
+        verb=\"GET\" />\r\n    <wsdl:operation name=\"GetInfoByZIP\">\r\n      <http:operation
+        location=\"/GetInfoByZIP\" />\r\n      <wsdl:input>\r\n        <http:urlEncoded
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetInfoByCity\">\r\n      <http:operation location=\"/GetInfoByCity\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByState\">\r\n      <http:operation location=\"/GetInfoByState\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <http:operation location=\"/GetInfoByAreaCode\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"USZipHttpPost\" type=\"tns:USZipHttpPost\">\r\n    <http:binding
+        verb=\"POST\" />\r\n    <wsdl:operation name=\"GetInfoByZIP\">\r\n      <http:operation
+        location=\"/GetInfoByZIP\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetInfoByCity\">\r\n      <http:operation
+        location=\"/GetInfoByCity\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetInfoByState\">\r\n
+        \     <http:operation location=\"/GetInfoByState\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetInfoByAreaCode\">\r\n      <http:operation location=\"/GetInfoByAreaCode\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \ </wsdl:binding>\r\n  <wsdl:service name=\"USZip\">\r\n    <wsdl:port name=\"USZipSoap\"
+        binding=\"tns:USZipSoap\">\r\n      <soap:address location=\"http://www.webservicex.net/uszip.asmx\"
+        />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"USZipSoap12\" binding=\"tns:USZipSoap12\">\r\n
+        \     <soap12:address location=\"http://www.webservicex.net/uszip.asmx\" />\r\n
+        \   </wsdl:port>\r\n    <wsdl:port name=\"USZipHttpGet\" binding=\"tns:USZipHttpGet\">\r\n
+        \     <http:address location=\"http://www.webservicex.net/uszip.asmx\" />\r\n
+        \   </wsdl:port>\r\n    <wsdl:port name=\"USZipHttpPost\" binding=\"tns:USZipHttpPost\">\r\n
+        \     <http:address location=\"http://www.webservicex.net/uszip.asmx\" />\r\n
+        \   </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 20:25:56 GMT
+- request:
+    method: post
+    uri: http://www.webservicex.net/uszip.asmx
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.webserviceX.NET"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:GetInfoByAreaCode><tns:USAreaCode>201</tns:USAreaCode></tns:GetInfoByAreaCode></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - ! '"http://www.webserviceX.NET/GetInfoByAreaCode"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '363'
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '11041'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 17 Aug 2013 20:26:00 GMT
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetInfoByAreaCodeResponse
+        xmlns="http://www.webserviceX.NET"><GetInfoByAreaCodeResult><NewDataSet xmlns=""><Table><CITY>Wood
+        Ridge</CITY><STATE>NJ</STATE><ZIP>07075</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Wyckoff</CITY><STATE>NJ</STATE><ZIP>07481</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Allendale</CITY><STATE>NJ</STATE><ZIP>07401</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Alpine</CITY><STATE>NJ</STATE><ZIP>07620</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Bayonne</CITY><STATE>NJ</STATE><ZIP>07002</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Bergenfield</CITY><STATE>NJ</STATE><ZIP>07621</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Bogota</CITY><STATE>NJ</STATE><ZIP>07603</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Carlstadt</CITY><STATE>NJ</STATE><ZIP>07072</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Cliffside
+        Park</CITY><STATE>NJ</STATE><ZIP>07010</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Closter</CITY><STATE>NJ</STATE><ZIP>07624</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>New
+        Milford</CITY><STATE>NJ</STATE><ZIP>07646</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>North
+        Arlington</CITY><STATE>NJ</STATE><ZIP>07031</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>North
+        Bergen</CITY><STATE>NJ</STATE><ZIP>07047</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Northvale</CITY><STATE>NJ</STATE><ZIP>07647</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Norwood</CITY><STATE>NJ</STATE><ZIP>07648</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Oakland</CITY><STATE>NJ</STATE><ZIP>07436</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Oradell</CITY><STATE>NJ</STATE><ZIP>07649</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Palisades
+        Park</CITY><STATE>NJ</STATE><ZIP>07650</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Paramus</CITY><STATE>NJ</STATE><ZIP>07652</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Paramus</CITY><STATE>NJ</STATE><ZIP>07653</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Park
+        Ridge</CITY><STATE>NJ</STATE><ZIP>07656</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ramsey</CITY><STATE>NJ</STATE><ZIP>07446</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ridgefield</CITY><STATE>NJ</STATE><ZIP>07657</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ridgefield
+        Park</CITY><STATE>NJ</STATE><ZIP>07660</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ridgewood</CITY><STATE>NJ</STATE><ZIP>07450</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ridgewood</CITY><STATE>NJ</STATE><ZIP>07451</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>River
+        Edge</CITY><STATE>NJ</STATE><ZIP>07661</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Rochelle
+        Park</CITY><STATE>NJ</STATE><ZIP>07662</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Rutherford</CITY><STATE>NJ</STATE><ZIP>07070</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Saddle
+        Brook</CITY><STATE>NJ</STATE><ZIP>07663</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Saddle
+        River</CITY><STATE>NJ</STATE><ZIP>07458</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Secaucus</CITY><STATE>NJ</STATE><ZIP>07094</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>South
+        Hackensack</CITY><STATE>NJ</STATE><ZIP>07606</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Teaneck</CITY><STATE>NJ</STATE><ZIP>07666</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Teaneck</CITY><STATE>NJ</STATE><ZIP>07688</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Tenafly</CITY><STATE>NJ</STATE><ZIP>07670</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Teterboro</CITY><STATE>NJ</STATE><ZIP>07608</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Union
+        City</CITY><STATE>NJ</STATE><ZIP>07087</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Waldwick</CITY><STATE>NJ</STATE><ZIP>07463</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>West
+        New York</CITY><STATE>NJ</STATE><ZIP>07093</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Westwood</CITY><STATE>NJ</STATE><ZIP>07675</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Ho
+        Ho Kus</CITY><STATE>NJ</STATE><ZIP>07423</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Hoboken</CITY><STATE>NJ</STATE><ZIP>07030</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07097</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07302</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07303</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07304</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07305</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07306</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07307</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07308</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07309</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07310</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07311</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Jersey
+        City</CITY><STATE>NJ</STATE><ZIP>07399</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Kearny</CITY><STATE>NJ</STATE><ZIP>07032</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Kearny</CITY><STATE>NJ</STATE><ZIP>07099</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Leonia</CITY><STATE>NJ</STATE><ZIP>07605</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Little
+        Ferry</CITY><STATE>NJ</STATE><ZIP>07643</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Lyndhurst</CITY><STATE>NJ</STATE><ZIP>07071</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Mahwah</CITY><STATE>NJ</STATE><ZIP>07430</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Mahwah</CITY><STATE>NJ</STATE><ZIP>07495</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Mahwah</CITY><STATE>NJ</STATE><ZIP>07498</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Maywood</CITY><STATE>NJ</STATE><ZIP>07607</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Midland
+        Park</CITY><STATE>NJ</STATE><ZIP>07432</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Montvale</CITY><STATE>NJ</STATE><ZIP>07645</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Moonachie</CITY><STATE>NJ</STATE><ZIP>07074</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Cresskill</CITY><STATE>NJ</STATE><ZIP>07626</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Demarest</CITY><STATE>NJ</STATE><ZIP>07627</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Dumont</CITY><STATE>NJ</STATE><ZIP>07628</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>East
+        Rutherford</CITY><STATE>NJ</STATE><ZIP>07073</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Edgewater</CITY><STATE>NJ</STATE><ZIP>07020</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Elmwood
+        Park</CITY><STATE>NJ</STATE><ZIP>07407</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Emerson</CITY><STATE>NJ</STATE><ZIP>07630</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Englewood</CITY><STATE>NJ</STATE><ZIP>07631</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Englewood
+        Cliffs</CITY><STATE>NJ</STATE><ZIP>07632</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Fair
+        Lawn</CITY><STATE>NJ</STATE><ZIP>07410</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Fairview</CITY><STATE>NJ</STATE><ZIP>07022</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Fort
+        Lee</CITY><STATE>NJ</STATE><ZIP>07024</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Franklin
+        Lakes</CITY><STATE>NJ</STATE><ZIP>07417</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Glen
+        Rock</CITY><STATE>NJ</STATE><ZIP>07452</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Hackensack</CITY><STATE>NJ</STATE><ZIP>07601</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Hackensack</CITY><STATE>NJ</STATE><ZIP>07602</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Harmon
+        Meadow</CITY><STATE>NJ</STATE><ZIP>07096</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Harrington
+        Park</CITY><STATE>NJ</STATE><ZIP>07640</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Hasbrouck
+        Heights</CITY><STATE>NJ</STATE><ZIP>07604</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Haworth</CITY><STATE>NJ</STATE><ZIP>07641</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table><Table><CITY>Hillsdale</CITY><STATE>NJ</STATE><ZIP>07642</ZIP><AREA_CODE>201</AREA_CODE><TIME_ZONE>E</TIME_ZONE></Table></NewDataSet></GetInfoByAreaCodeResult></GetInfoByAreaCodeResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 20:25:57 GMT
+recorded_with: VCR 2.5.0
