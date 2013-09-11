@@ -1,5 +1,6 @@
-PATH
-  remote: ../otis
+GIT
+  remote: git@github.com:tbueno/otis.git
+  revision: 5dfb679fb50ba1c67cf877ad7bde70fcfff7808a
   specs:
     otis (0.0.1)
       savon (~> 2.2.0)
