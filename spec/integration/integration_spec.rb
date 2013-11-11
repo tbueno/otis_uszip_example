@@ -11,7 +11,7 @@ describe 'integration tests' do
     }).routes
   end
 
-  let(:client) { Otis::Client.new(routes, "http://www.webservicex.net/uszip.asmx?WSDL") }
+  let(:client) { Otis::SoapClient.new(routes, "http://www.webservicex.net/uszip.asmx?WSDL") }
 
   describe 'get_info_by_zip' do
     it 'gets the location information' do
