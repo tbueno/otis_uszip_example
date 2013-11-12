@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:tbueno/otis.git
-  revision: 566b7a967a6d8b5bd35300efbcfc795f0b96fc63
+  revision: a938447fb8be1449d6175e5ea1ef4c70058f68d6
   specs:
-    otis (0.0.2)
+    otis (0.0.4)
       faraday
       savon (~> 2.2.0)
       virtus
@@ -81,7 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   debugger
-  otis (= 0.0.2)!
+  otis (= 0.0.4)!
   rake
   rspec
   vcr
