@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "otis", '0.0.4', :git => 'git@github.com:tbueno/otis.git'
+gem "otis", '0.0.4'
 
 group :development do
   gem 'rake'
