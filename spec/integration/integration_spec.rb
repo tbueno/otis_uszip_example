@@ -3,12 +3,7 @@ require 'spec_helper'
 describe 'integration tests' do
 
   let(:routes) do
-    Otis::Map.new({
-      :get_info_by_zip => UsZip::InfoZipResponse,
-      :get_info_by_state => UsZip::InfoStateResponse,
-      :get_info_by_city => UsZip::InfoCityResponse,
-      :get_info_by_area_code => UsZip::InfoAreaCodeResponse
-    })
+    UsZip::Map
   end
 
   let(:client) { Otis::SoapClient.new(routes, "http://www.webservicex.net/uszip.asmx?WSDL") }
